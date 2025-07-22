@@ -7,7 +7,7 @@
 </head>
 <body>
 
-  <form id="Agendamento">
+  <form id="CadastroAgendamento">
     <h2>Agendar horário</h2>
     
     <label for="nome">Nome:</label>
@@ -16,8 +16,8 @@
     <label for="telefone">Telefone:</label>
     <input type="tel" id="telefone" required>
     
-    <label for="serviço">Serviço:</label>
-    <select id="serviço" required>
+    <label for="servico">Serviço:</label> 
+    <select id="servico" required>
       <option value="">Selecione</option>
       <option value="Corte de Social">Corte de Social</option>
       <option value="Corte de Degrade">Corte de Degrade</option>
@@ -28,9 +28,10 @@
     <label for="horario">Horário:</label>
     <input type="time" id="horario" required>
     
-    <button type="submit">Agendar</button>
+    <button type="submit" onclick="cadastrar()">Agendar</button>
   </form>
 
+  <script src="script.js"></script>
 </body>
 </html>
 
